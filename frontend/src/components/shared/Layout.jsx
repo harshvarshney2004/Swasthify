@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Header from './Header';
-import AIChatbot from '../AIChatbot'; // Import the AIChatbot component
+// import AIChatbot from '../AIChatbot'; // Import the AIChatbot component
 
 export default function Layout() {
 	return (
@@ -16,9 +16,9 @@ export default function Layout() {
 			</div>
 
 			{/* Fixed chatbot component */}
-			<div className="fixed bottom-5 right-5">
+			{/* <div className="fixed bottom-5 right-5">
 				<AIChatbot />
-			</div>
+			</div> */}
 		</div>
 	);
 }
