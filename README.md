@@ -130,5 +130,5 @@ Develop a comprehensive **AI-powered virtual healthcare platform** that connects
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/ai-healthcare-platform.git
-cd ai-healthcare-platform
+git clone [https://github.com/ayush14189/Swasthify](https://github.com/ayush14189/Swasthify).git
+cd Swasthify
