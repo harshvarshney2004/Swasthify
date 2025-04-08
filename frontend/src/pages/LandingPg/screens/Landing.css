@@ -1,0 +1,84 @@
+/* Apply a shared background gradient and image opacity */
+.hero-section {
+  position: relative;
+  background: linear-gradient(90deg, rgba(49, 130, 206, 1) 0%, rgba(56, 178, 172, 1) 100%);
+  overflow: hidden;
+}
+
+.hero-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-cover: cover;
+  opacity: 0.2; /* Match the opacity from LandingPage */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the background image */
+}
+
+.hero-content h1, .hero-content p {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Improve readability */
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Button style */
+.hero-button {
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #ff4500; /* Darker tomato color */
+}
+
+
+#google_translate_element {
+  display: flex !important;
+  justify-content: center !important;
+  height: 20px !important;
+  margin-top: 120px !important;
+  margin-bottom: -20px !important;
+}
+
+body > .skiptranslate {
+  display: none !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+@media print {
+  #google_translate_element {
+    display: none !important;
+  }
+}
+
+.skiptranslate {
+  display: none !important;
+}
