@@ -137,13 +137,11 @@ cd Swasthify
 ### 2. Install Requirements
 #### a. Backend (Node.js + Express)
 ``` bash
-cd server
+cd backend
 npm install
 ```
 Create a .env file in the server directory with the following (example):
 ``` bash
-Copy
-Edit
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
@@ -160,3 +158,68 @@ Run the backend server:
 ``` bash
 npm run dev
 ```
+
+#### b. Frontend (React + TailwindCSS + UI libraries)
+``` bash
+cd frontend
+npm install
+```
+Create a .env file in the client folder:
+``` bash
+REACT_APP_BASE_URL=http://localhost:5000
+REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id
+```
+Run the frontend:
+``` bash
+npm start
+```
+
+#### c. ML API (Python + Flask)
+Make sure you have Python 3.8 or later and pip installed.
+
+``` bash
+cd ../flask
+python -m venv venv
+source venv/bin/activate       # For macOS/Linux
+venv\Scripts\activate          # For Windows
+pip install -r requirements.txt
+```
+Run the Flask server:
+``` bash
+python app.py
+```
+This will serve AI endpoints like symptom analysis, disease prediction, drug recommendation, etc.
+
+### 3. IoT Device Setup (ESP8266 + Arduino UNO)
+#### Required Components:
+Arduino UNO  
+ESP8266 WiFi Module  
+Servo Motor (for pill dispenser slots)  
+Buzzer  
+I2C OLED Screen  
+Jumper wires
+Breadboard  
+Power Source
+
+#### Steps:  
+1. Install Arduino IDE & Libraries:
+- Download and install Arduino IDE.
+- In Arduino IDE, go to Preferences and add the ESP8266 board URL:
+``` bash
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+```
+- Then, go to Boards Manager, search for `esp8266`, and install it.
+
+- Also install the following libraries:  
+`ESP8266WiFi.h`  
+`HTTPClient.h`  
+`Servo.h`
+
+2. Flash the code from the `/pill_dispenser` folder (e.g., pill_dispenser.ino).  
+
+3. Update these variables in code:  
+const char* ssid = "your_wifi_ssid";  
+const char* password = "your_wifi_password";  
+const String serverEndpoint = "http://your-server-ip:7500/api/pill-data";  
+Upload and monitor Serial Monitor for success logs.
+
