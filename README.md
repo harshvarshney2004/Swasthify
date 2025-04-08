@@ -132,3 +132,31 @@ Develop a comprehensive **AI-powered virtual healthcare platform** that connects
 ```bash
 git clone https://github.com/ayush14189/Swasthify.git
 cd Swasthify
+```
+
+### 2. Install Requirements
+#### a. Backend (Node.js + Express)
+``` bash
+cd server
+npm install
+```
+Create a .env file in the server directory with the following (example):
+``` bash
+Copy
+Edit
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+ZOOM_API_KEY=your_zoom_key
+ZOOM_API_SECRET=your_zoom_secret
+```
+
+Run the backend server:
+``` bash
+npm run dev
+```
