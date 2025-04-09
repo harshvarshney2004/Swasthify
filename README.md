@@ -180,7 +180,7 @@ npm start
 Make sure you have Python 3.8 or later and pip installed.
 
 ``` bash
-cd ../flask
+cd flask
 python -m venv venv
 source venv/bin/activate       # For macOS/Linux
 venv\Scripts\activate          # For Windows
