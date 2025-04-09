@@ -90,7 +90,8 @@ Develop a comprehensive **AI-powered virtual healthcare platform** that connects
 - Python
 - PyTorch
 - TensorFlow
-- LLaMA (for chatbot)
+- Keras
+- LLaMA
 - Jupyter Notebook
 
 ### 🛢️ Database
@@ -108,6 +109,7 @@ Develop a comprehensive **AI-powered virtual healthcare platform** that connects
 - Google Meet API
 - Zoom API
 - Cloudinary (Image uploads)
+- Cashfree API (for payment gateway and payouts)
 - National Medical Council of India API (Doctor verification)
 
 ---
