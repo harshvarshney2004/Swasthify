@@ -220,6 +220,6 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 3. Update these variables in code:  
 const char* ssid = "your_wifi_ssid";  
 const char* password = "your_wifi_password";  
-const String serverEndpoint = "http://your-server-ip:7500/api/pill-data";  
-Upload and monitor Serial Monitor for success logs.
+const String serverEndpoint = "http://your-server-ip/get_times";  
+Upload and monitor `Serial Monitor` for success logs.
 
