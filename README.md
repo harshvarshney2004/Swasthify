@@ -122,7 +122,7 @@ Develop a comprehensive **AI-powered virtual healthcare platform** that connects
 
 ## 📊 Demo / Presentation
 
-📽️ [Click here to view the Project Presentation](./Swasthify)
+📽️ [Click here to view the Project Presentation](./assets/Swasthify.pdf)
 
 ---
 
