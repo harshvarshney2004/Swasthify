@@ -39,11 +39,11 @@ Develop a comprehensive **AI-powered virtual healthcare platform** that connects
 - A virtual assistant to answer medical queries in real time.
 - Offers guidance on symptoms and recommends next steps.
 
-### 5. Personalized Healthcare Tips
+### 5. Personalized Healthcare Tips Recommendation
 - AI-driven health tips based on medical history, vitals, and symptoms.
 - Encourages proactive health management.
 
-### 6. Prescription Summarization System
+### 6. PrescriptIQ - Prescription Summarization System
 - Doctors add prescriptions digitally.
 - Patients view/download summaries with medication info, timing, and duration.
 
