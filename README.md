@@ -16,7 +16,7 @@ Develop a comprehensive **AI-powered virtual healthcare platform** that connects
 - Provide **digital prescription management**.
 - Integrate an **IoT-powered pill dispenser** for automated medication dispensing.
 - Support a **secure payment system** with escrow logic.
-- Offer an **AI-driven medical chatbot** for real-time health advice.
+- Offer an **AI-driven medical chatbot** for real-time health advices.
 
 ---
 
